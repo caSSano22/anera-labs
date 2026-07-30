@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Insights & Research | Anera Labs</title>
+  <meta name="description" content="Research essays and market analyses on Open Source AI, inference economics, and compute financial infrastructure." />
+  <link rel="icon" type="image/x-icon" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body style="padding-top: 20px;">
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="navbar-anera">
+    <a href="index.html" class="brand-logo-anera">ANERA</a>
+
+    <div class="desktop-nav-links" style="display: flex; align-items: center; gap: 32px;">
+      <nav class="nav-links-anera">
+        <a href="index.html#top" class="nav-link-anera">Mission</a>
+        <a href="index.html#products" class="nav-link-anera">Products</a>
+        <a href="index.html#team" class="nav-link-anera">Team</a>
+        <a href="insights.html" class="nav-link-anera active">Insights</a>
+        <a href="careers.html" class="nav-link-anera">Careers</a>
+      </nav>
+
+      <a href="insights.html" class="btn-anera-outline" style="padding: 8px 20px; font-size: 0.85rem;">Read Research ↗</a>
+    </div>
+  </header>
+
+  <div class="wrap-container" style="padding-top: 64px; padding-bottom: 120px;">
+    <div class="widget-label-mono">— RESEARCH & INSIGHTS</div>
+    
+    <h1 style="font-family: var(--font-sans); font-size: clamp(36px, 4.5vw, 56px); font-weight: 400; color: var(--text-white); margin-bottom: 16px;">
+      Insights & Market Analysis
+    </h1>
+    <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 680px; margin-bottom: 48px;">
+      Rigorous research on open source LLM economics, GPU compute markets, and financial primitives for AI.
+    </p>
+
+    <!-- Tag Filter Bar -->
+    <div style="display: flex; gap: 12px; margin-bottom: 48px; flex-wrap: wrap;">
+      <button class="insights-tag-btn" data-category="all" style="padding: 8px 18px; border-radius: 9999px; border: 1px solid var(--text-white); background: transparent; color: var(--text-white); font-family: var(--font-mono); font-size: 0.8rem;">All</button>
+      <button class="insights-tag-btn" data-category="inference" style="padding: 8px 18px; border-radius: 9999px; border: 1px solid var(--stroke); background: transparent; color: var(--text-muted); font-family: var(--font-mono); font-size: 0.8rem;">Inference Economics</button>
+      <button class="insights-tag-btn" data-category="markets" style="padding: 8px 18px; border-radius: 9999px; border: 1px solid var(--stroke); background: transparent; color: var(--text-muted); font-family: var(--font-mono); font-size: 0.8rem;">Markets & Indices</button>
+      <button class="insights-tag-btn" data-category="opensource" style="padding: 8px 18px; border-radius: 9999px; border: 1px solid var(--stroke); background: transparent; color: var(--text-muted); font-family: var(--font-mono); font-size: 0.8rem;">Open Source AI</button>
+    </div>
+
+    <!-- Blog Posts Grid -->
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px;">
+      
+      <!-- Post 1 -->
+      <div class="insight-post-card" data-category="inference" style="background: var(--bg-card); border: 1px solid var(--stroke); border-radius: 20px; padding: 36px;">
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan); margin-bottom: 12px;">INFERENCE ECONOMICS • JULY 2026</div>
+        <a href="post-unverifiable-model.html">
+          <h2 style="font-size: 1.4rem; font-weight: 500; color: var(--text-white); margin-bottom: 12px; line-height: 1.35;">
+            The Unverifiable Model: Trust, Optimisation and the Economics of LLM Inference
+          </h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px;">
+            Exploring how unverifiability shapes inference markets, pricing, and capital efficiency across decentralized compute.
+          </p>
+          <span style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-white);">Read Essay →</span>
+        </a>
+      </div>
+
+      <!-- Post 2 -->
+      <div class="insight-post-card" data-category="markets" style="background: var(--bg-card); border: 1px solid var(--stroke); border-radius: 20px; padding: 36px;">
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-orange); margin-bottom: 12px;">MARKETS & INDICES • JUNE 2026</div>
+        <a href="#">
+          <h2 style="font-size: 1.4rem; font-weight: 500; color: var(--text-white); margin-bottom: 12px; line-height: 1.35;">
+            Inference Needs a Forwards Market: Managing Spot Volatility in Compute
+          </h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px;">
+            Why GPU compute pricing requires standardized forward contracts and revenue-share hedging structures.
+          </p>
+          <span style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-white);">Read Essay →</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
